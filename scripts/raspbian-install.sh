@@ -105,17 +105,17 @@ activate_network_manager() {
 
             disable_dhcpcd
 
-            say 'Activating NetworkManager...'
+            #say 'Activating NetworkManager...'
 
-            ensure sudo systemctl enable NetworkManager
+            #ensure sudo systemctl enable NetworkManager
 
-            ensure sudo systemctl start NetworkManager
+            #ensure sudo systemctl start NetworkManager
         fi
     fi
 
-    if [ ! "$(service_active_state NetworkManager)" = "active" ]; then
-        err 'Cannot activate NetworkManager'
-    fi
+    #if [ ! "$(service_active_state NetworkManager)" = "active" ]; then
+    #    err 'Cannot activate NetworkManager'
+    #fi
 }
 
 disable_dhcpcd() {
