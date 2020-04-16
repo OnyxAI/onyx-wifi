@@ -5,7 +5,7 @@ set -u
 trap "exit 1" TERM
 export TOP_PID=$$
 
-: "${WFC_REPO:=OnyxAI/onyx-wifi}"
+: "${WFC_REPO:=balena-io/wifi-connect}"
 : "${WFC_INSTALL_ROOT:=/usr/local}"
 
 SCRIPT='raspbian-install.sh'
